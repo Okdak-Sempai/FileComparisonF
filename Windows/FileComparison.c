@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <windows.h>
-
+#include "FilesFuncs.h"
 int main() {
 
         wprintf(L"Hello!\t Please select which mode to use:\n");
