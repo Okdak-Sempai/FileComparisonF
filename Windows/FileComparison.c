@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <windows.h>
 #include "FilesFuncs.h"
+
 int main() {
 
         wprintf(L"Hello!\t Please select which mode to use:\n");
@@ -20,7 +21,8 @@ int main() {
             }
         } while (choice != 1 && choice != 2);
 
-        do {
+        do 
+        {
 
         wprintf(L"Please Select the 1st file to compare.\n");
 
