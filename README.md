@@ -11,3 +11,7 @@ This should be used when you have twice the same file but both have the same siz
 There is 2 main methods.
 - compareFiles() that compares literally byte per byte. This is slower one but technically the most accurate one.
 - compareFilesCluster() that uses Clusters of 4096 bytes. This is the faster one but technically less accurate
+
+# V2 Upgrades
+
+There's a loop for multiple comparisons. To end the code you can press 0.
