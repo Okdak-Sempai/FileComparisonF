@@ -2,6 +2,7 @@
 ##### An optimised tool to compare 2 files, mostly useful for Corruption test.
 
 This is a derivative of FileComparison that does the same work but compare files in batch.
+This means 2 folders content can be compared (This can make faster comparison, the only requirement is to have similar names between the folders.)
 
 # PURPOSE
 
