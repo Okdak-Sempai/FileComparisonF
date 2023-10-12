@@ -22,7 +22,6 @@ DWORD getFileSize(const wchar_t* filePath)
     {
         return -1;
     }
-
     DWORD fileSize = GetFileSize(hFile, NULL);
     CloseHandle(hFile);
     return fileSize;
@@ -226,5 +225,5 @@ int compareFilesCluster(const wchar_t* file1, const wchar_t* file2)
     fclose(fptr1);
     fclose(fptr2);
 
-    return 1; // Files a the same.
+    return 1; // Files are the same.
 }

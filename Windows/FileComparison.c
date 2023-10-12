@@ -3,7 +3,7 @@
 #include "FilesFuncs.h"
 
 int main() {
-
+        
         wprintf(L"Hello!\t Please select which mode to use:\n");
         wprintf(L"Press 1\tfor the faster one that uses Clusters of 4096 bytes.\n");
         wprintf(L"Press 2\tfor the slower but more accurate method that compares literally byte per byte.\n\n");
@@ -70,7 +70,7 @@ int main() {
         }
         QueryPerformanceCounter(&endTime);
         double elapsedTime = (endTime.QuadPart - startTime.QuadPart) * 1000.0 / frequency.QuadPart;
-        wprintf(L"Execution time: %.2f millisecondes\n", elapsedTime);
+        wprintf(L"Execution time: %.2f millisecondes\n\a", elapsedTime);
 
         free(FirstFile);
         free(SecondFile);
